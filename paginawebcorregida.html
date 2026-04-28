@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tienda de ropa</title>
+    
+
+    <style>
+        body {
+            font-family: Arial; 
+            margin: 0;
+            background-color: rgb(116, 46, 132);
+        }
+
+        nav {
+            background-color: rgba(81, 16, 138, 0.87);
+            padding: 10px;
+        }
+
+        nav ul {
+               display: flex;
+               justify-content:center;
+               flex-wrap: wrap; 
+        }
+        nav ul li{
+                 margin: 5px;
+        }
+        
+        
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            display: inline-block;
+            position: relative;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 1px solid white;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        ul li a:hover {
+            background-color: rgb(104, 46, 109);
+        }
+
+        ul li ul {
+            display: none;
+            position: absolute;
+            background-color: rgb(101, 48, 105);
+            padding: 10px;
+        }
+
+        ul li:hover ul {
+            display: block;
+        }
+
+        ul li ul li {
+            display: block;
+        }
+
+        section {
+            background-color: rgb(212, 222, 224);
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            border: 2px solid black;
+            display: inline-block;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        #accesorios, #ropa {
+           display: grid;
+           grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+           gap: 10px;
+           justify-items: center;
+        }
+
+
+    </style>
+</head>
+
+<body>
+   <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+
+            <li><a href="#">Menú</a>
+                <ul>
+                    <li><a href="#accesorios">Accesorios</a></li>
+                    <li><a href="#ropa">Ropa</a></li>
+                </ul>
+            </li>
+            <li><a href="#promociones">Promociones</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio">
+        <h1>Inicio</h1>
+        <p>Bienvenidos a mi pagina web sobre mi tienda de ropa.</p>
+        <p>Aquí encontrarás lo mejor en moda y de buena calidad.</p>
+    </section>
+
+    <section id="Menu">
+        <h1>Menu</h1>
+        <h2>Accesorios</h2>
+        <img src="collares.jpg">
+        <img src="pulseras.jpg">
+        <img src="bolsos.jpg">
+        <img src="bolsos2.jpg">
+    </section>
+     
+    <section id="Menu">
+             <h1>Menu</h1>
+             <h2>Ropa</h2>
+             <img src="camisa.jpg">
+             <img src="vestido.jpg">
+             <img src="vestidos3.jpg">
+             <img src="vestidos4.jpg">
+             <img src="camisa3.jpg">
+             <img src="camisa4.jpg">
+
+    </section>
+    
+    
+    <section id="promociones">
+        <h1>Promociones</h1>
+        <p>Descuentos especiales en ropa y accesorios.</p>
+            <p>Aprovecha este proximo 30 de mayo por ser dia especial tendremos en la tienda 25% de descuento en todas las prendas y accesorios.</p>
+
+    </section>
+
+   <section id="contacto">
+        <h1>Contacto</h1>
+        <p>Tienda: Ari_style.</p>
+        <p>Teléfono: 5872-4330.</p>
+        <p>Dirección: chinandega,Nicaragua.</p>
+    </section>
+
+</body>
+</html>
